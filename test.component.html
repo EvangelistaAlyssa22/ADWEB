@@ -1,0 +1,14 @@
+<p>This is The Test Component</p>
+
+{{ appName }}
+
+<p>Welcome, {{ clientName }}!</p>
+<input type="text" [value]="clientName">
+
+<p [style.color]="myColor">Text color is styled using binding</p>
+
+<p [class]="appliedCSSClass">This line applied the "myClass" property</p>
+<p [class.blue]="noteappliedCSSClass">While this line does not</p>
+
+<h2>Event Binding</h2>
+<button (click)="showData($event)">Click here</button>
