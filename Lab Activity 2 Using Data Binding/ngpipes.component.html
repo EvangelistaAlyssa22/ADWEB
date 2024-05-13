@@ -1,0 +1,22 @@
+<div> 
+    Today's date :- {{presentDate}} 
+ </div>
+
+ <div>
+    This is a short date :- {{presentDate | date: 'shortDate' }} <br/>
+    This line shows the full date :- {{presentDate | date: 'fullDate' }} <br/>
+    This will show a formatted date :- {{presentDate | date: 'M/dd/yyyy' }} <br/>
+    This indicates the hours and minutes :- {{presentDate | date: 'h:mm' }} <br/>
+        <<your name here>>
+ </div> 
+
+ <div>
+    Date with uppercase :- {{presentDate | date: 'fulldate' | uppercase}} <br/>
+    Date with lowercase :- {{presentDate | date: 'medium' | lowercase}} <br/>
+ </div>
+
+ <p>Angular Pipes</p>
+
+ <p>Current Time: {{ currentTime$ | async | date: 'medium' }}</p>
+
+ <p>Decimal Example: {{ decimal_num | number: '1,1-2' }}</p>
